@@ -43,13 +43,13 @@ const Login: React.FC = () => {
               padding={3}
             >
               <Typography variant="h3" textAlign={'center'}>
-                Login
+                Cadastro
               </Typography>
-              <Form tipo="login" />
+              <Form tipo="cadastro" />
               <Typography textAlign="center" variant="body2">
-                ME CADASTRAR ?{' '}
-                <Link to="/Cadastro" style={{ color: 'inherit' }}>
-                  Clique Aqui
+                 Ir para página inicial?{' '}
+                <Link to="/" style={{ color: 'inherit' }}>
+                  Let´s go
                 </Link>
               </Typography>
             </Grid>

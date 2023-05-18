@@ -1,9 +1,15 @@
-export interface Usuario {
-	email: string;
-	senha: number
-	repetirSenha: number
-}
-
-export interface Recados {
-	recado: string;
-}
+export type Recado = {
+    id: number;
+    titulo: string;
+    descricao: string;
+    criadoPor: string;
+  };
+  
+  export type Usuario = {
+    email: string;
+    senha: string;
+    recados: Recado[];
+  };
+  
+  export type Acao = 'criar' | 'atualizar' | 'deletar';
+  

@@ -1,16 +1,16 @@
-import React from "react";
-import AppRoutes from "./routes/AppRoutes";
-import { CssBaseline } from "@mui/material";
-import { ThemeProvider } from "@emotion/react";
-import tema from "./configuracao/tema";
+import React from 'react';
+import AppRoutes from './routes/AppRoutes';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 
-
-const App: React.FC = () => {
+ import Theme from './config/theme/Theme';
+ 
+function App() {
   return (
-    <ThemeProvider theme={tema}>
-          <CssBaseline />
-          <AppRoutes />
+    <ThemeProvider theme={Theme}>
+       <CssBaseline /> 
+      <AppRoutes />
     </ThemeProvider>
   );
-};
+}
+
 export default App;

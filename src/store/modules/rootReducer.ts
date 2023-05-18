@@ -1,13 +1,12 @@
 import { combineReducers } from '@reduxjs/toolkit';
-
- // import contatosReducer from './Contatos/contatosSlice';
-// CRIOU UM NOVO SLICE OU ADAPTER?
-// ADICIONA AQUI
+import reducerRecados from './Recados/recadoSlice';
+import reducerUsuarios from './Usuarios/usuarioSlice';
+import reducerUsuarioLogado from './UsuarioLogado/usuarioLogadoSlice';
 
 const rootReducer = combineReducers({
-	// cadastros: contatosReducer,
-	// login: () => 'produto',
-	// recados: () => 'usuarios',
+  usuarios: reducerUsuarios,
+  usuarioLogado: reducerUsuarioLogado,
+  recados: reducerRecados,
 });
 
 export default rootReducer;
