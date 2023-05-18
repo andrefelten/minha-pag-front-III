@@ -1,4 +1,4 @@
-export interface Usuarios {
+export interface Usuario {
 	email: string;
 	senha: number
 	repetirSenha: number
